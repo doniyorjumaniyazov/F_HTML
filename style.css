@@ -1,46 +1,126 @@
-a {
-    text-decoration: none;
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menu-link {
-    color: cornflowerblue;
-    font-size: 16px;
-    line-height: 20px;
+/* Основные стили для тела страницы */
+body {
+    font-family: Arial, sans-serif;
 }
 
-.header-h1 {
-    color: #222222;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: bold;
+/* Верхний блок с меню и логотипом */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
-.paragraph {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    color: #7D7987;
-}
-.header-h2 {
-    color: coral;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 80px;
-}
-/* body {
+
+.menu-container {
     display: flex;
     justify-content: space-between;
-} */
-
-/* Разделим экран на два блока: слева - html файлы, справа - стили */
-/* .left-panel {
-    width: 30%;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1px;
 }
 
-.right-panel {
-    width: 30%;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-left: 2px solid #ddd;
-} */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: rgba(136, 122, 122, 0.849);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo img {
+    width: 20px; /* Размер логотипа */
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Второй блок: левый блок с текстом и кнопками, правый блок  */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.left-content {
+    width: 50%;
+}
+
+.left-content h1 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.left-content p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.left-content .buttons {
+    display: flex;
+    gap: 30px;
+   
+}
+
+.left-content .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgba(143, 52, 52, 0.849);
+}
+
+.right-content {
+    width: 45%;
+}
+
+.right-content img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Третий блок: логотипы */
+.logos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px 0;
+}
+
+.logo-item img {
+    width: 100px;
+    height: auto;
+}
+
+/* Четвертый блок:  */
+.additional-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.additional-images img {
+    width: 200px;
+    height: auto;
+}
